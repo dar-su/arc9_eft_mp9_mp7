@@ -221,6 +221,36 @@ ATT.Category = {"eft_mag_mp7"}
 ARC9.LoadAttachment(ATT, "eft_mp7_mag_40")
 
 
+///////////////////////////////////////      eft_mp7a2_blk
+
+
+ATT = {}
+
+ATT.PrintName = "MP7A2 Full Black"
+ATT.CompactName = "Black"
+ATT.Icon = Material("entities/eft_mp7_attachments/a2blk.png", "mips smooth")
+ATT.Description = [[Black color instead of FDE/green (wtf bsg??) for the MP7A2.
+
+Not presents in EFT, custom att.]]
+
+-- ATT.DropMagazineSkin = 1
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_custom_slot_mp7"}
+ATT.Attachments = {
+    {
+        PrintName = "Custom slot",
+        Pos = Vector(0, 0, 1),
+        Ang = Angle(0, 0, 0),
+        Category = {"eft_custom_slot", "eft_custom_slot_mp7"},
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_mp7a2_blk")
+
+
 
 local dmgrange = (GetConVar("arc9_eft_mindmgrange"):GetInt() or 1000)/1000
 local mult9 = GetConVar("arc9_eft_mult_pistol"):GetFloat() or 0.5

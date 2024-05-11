@@ -1007,6 +1007,8 @@ SWEP.AttachmentElements = {
     ["eft_mp7_stock_a2unfolded"] = { Bodygroups = { {6, 3} } },
     ["eft_mp7_stock_a1folded"] = { Bodygroups = { {6, 2} } },
     ["eft_mp7_stock_a2folded"] = { Bodygroups = { {6, 4} } },
+
+    ["eft_mp7a2_blk"] = { Bodygroups = { {1, 2} } },
     -- ["eft_mp7_a2"] = { Bodygroups = { {1, 1} } },
 }
 
