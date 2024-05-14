@@ -238,6 +238,7 @@ Not presents in EFT, custom att.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.RequireElements = {"eft_mp7_a2"}
 ATT.Category = {"eft_custom_slot_mp7"}
 ATT.Attachments = {
     {
