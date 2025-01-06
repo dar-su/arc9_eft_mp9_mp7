@@ -78,8 +78,6 @@ ATT.Description = [[A standard-issue foldable stock for the MP9 SMG. Manufacture
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.HasStock = true
-
 ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3", ["Recoil while extended"] = "-13%" }
 
@@ -90,7 +88,8 @@ ATT.ToggleStats = {
         PrintName = "Unfolded",
         RecoilMult = 0.87,
         VisualRecoilMult = 0.87,
-        ActivateElements = {"eft_mp9_stock_unfolded"}
+        ActivateElements = {"eft_mp9_stock_unfolded"},
+        HasStock = true
     },
     {
         PrintName = "Folded",

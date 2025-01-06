@@ -28,7 +28,7 @@ SWEP.DefaultBodygroups = "0000000000000"
 ------------------------- |||           Offsets            ||| -------------------------
 
 SWEP.WorldModelOffset = {
-    Pos = Vector(-13, 5.4, -6),
+    Pos = Vector(-12, 5.4, -4),
     Ang = Angle(-7, 0, 180),
     TPIKPos = Vector(-6, 5, -4), -- rpg
     TPIKAng = Angle(-11.5, 0, 180),
@@ -48,6 +48,14 @@ SWEP.CustomizePos = Vector(13.5, 22, 5)
 SWEP.CustomizeSnapshotFOV = 95
 SWEP.CustomizeRotateAnchor = Vector(13.5, -4.28, -5.23)
 
+-- this thing can one hand sprint
+local handupang, handuppos, handupholdtype = Angle(-2, 40, -7), Vector(1, -5, -6), "normal"
+SWEP.OneHandedSprint = true
+SWEP.OneHandedSprintHook = function(self, old) if self:GetValue("HasStock") then return false end end
+SWEP.SprintAngHook = function(self, old) if !self:GetValue("HasStock") then return handupang end end
+SWEP.SprintPosHook = function(self, old) if !self:GetValue("HasStock") then return handuppos end end
+SWEP.HoldTypeSprintHook = function(self, old) if !self:GetValue("HasStock") then return handupholdtype end end
+
 ------------------------- |||           Stats            ||| -------------------------
 
 SWEP.Spread = 7.22 * ARC9.MOAToAcc
@@ -57,40 +65,40 @@ SWEP.BarrelLength = 20
 SWEP.Ammo = "pistol"
 SWEP.Firemodes = {
     { Mode = -1, PoseParam = 2},
-    { Mode = 1, PoseParam = 1 }
+    { Mode = 1, RPM = 450, PoseParam = 1 }
 }
 
 SWEP.Slot = 2
 
 ------------------------- |||           Recoil            ||| -------------------------
 
-SWEP.Recoil = 0.2 -- general multiplier of main recoil
+SWEP.Recoil = 0.5 -- general multiplier of main recoil
 
-SWEP.RecoilUp   = 3   -- up recoil
-SWEP.RecoilSide = 1.5 -- sideways recoil
-SWEP.RecoilRandomUp   = 0.75 -- random up/down
-SWEP.RecoilRandomSide = 1.25   -- random left/right
+SWEP.RecoilUp   = 2.5   -- up recoil
+SWEP.RecoilSide = 2.0 -- sideways recoil
+SWEP.RecoilRandomUp   = 1.75 -- random up/down
+SWEP.RecoilRandomSide = 1.5   -- random left/right
 
-SWEP.RecoilAutoControl = 5 -- autocompenstaion, could be cool if set to high but it also affects main recoil
+SWEP.RecoilAutoControl = 4.05 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
 -- visual recoil   aka visrec
-SWEP.VisualRecoil = 1 -- general multiplier for it
+SWEP.VisualRecoil = 0.3 -- general multiplier for it
 
 SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 0.15   -- up/down tilt when semi/bursts
 SWEP.VisualRecoilUp                   = 0.6   --   when fullautoing
 SWEP.EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
-SWEP.VisualRecoilSide                 = 0.13   --   when fullautoing
+SWEP.VisualRecoilSide                 = 0.09   --   when fullautoing
 SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
 
-SWEP.VisualRecoilPunch = 1 -- How far back visrec moves the gun
-SWEP.VisualRecoilPunchSights = -7 -- same but in sights only
+SWEP.VisualRecoilPunch = 2 -- How far back visrec moves the gun
+SWEP.VisualRecoilPunchSights = 1.5 -- same but in sights only
 
 SWEP.VisualRecoilDampingConst = 200  -- spring settings, this is speed of visrec
 SWEP.VisualRecoilSpringPunchDamping = 5 -- the less this is the more wobbly gun moves
 SWEP.VisualRecoilSpringMagnitude = 0.5 -- some third element of spring, high values make gun shake asf on low fps
 
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.1 -- gun will go down each shot by this value
-SWEP.VisualRecoilPositionBumpUp = -0.25 -- same but in sights
+SWEP.VisualRecoilPositionBumpUp = -0.3 -- same but in sights
 SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you probably should keep it same as sight value, i guess it doesn't matter anymore after recoil update
 
 -- SWEP.VisualRecoilCenter = Vector(2, 14, 0) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
@@ -98,10 +106,10 @@ SWEP.EFT_ShotsToSwitchToFullAutoBehaviur = 3 -- how many shots for switch to ful
 
 SWEP.RecoilKick = 0.145 -- camera roll each shot + makes camera go more up when fullautoing
 
-SWEP.VisualRecoilCenter = Vector(4.28, 19, -2)
+SWEP.VisualRecoilCenter = Vector(4.28, 19, -1)
 SWEP.SubtleVisualRecoil = 0.75
-SWEP.SubtleVisualRecoilDirection = 3
-SWEP.SubtleVisualRecoilSpeed = 1.25
+SWEP.SubtleVisualRecoilDirection = 5
+SWEP.SubtleVisualRecoilSpeed = 1.5
 
 ------------------------- |||           Damage            ||| -------------------------
 

@@ -13,7 +13,7 @@ SWEP.DefaultBodygroups = "01000000000000"
 SWEP.RPM = 1100
 SWEP.Firemodes = {
     { Mode = -1, PoseParam = 3},
-    { Mode = 1, PoseParam = 1 }
+    { Mode = 1, RPM = 450, PoseParam = 1 }
 }
 
 

@@ -77,7 +77,7 @@ ATT.Description = [[A standard-issue retractable stock for the MP7A1 submachine 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.HasStock = true
+ATT.HasBufferTube = true
 
 ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3", ["Recoil while extended"] = "-17%" }
@@ -89,7 +89,8 @@ ATT.ToggleStats = {
         PrintName = "Unfolded",
         RecoilMult = 0.83,
         VisualRecoilMult = 0.83,
-        ActivateElements = {"eft_mp7_stock_a1unfolded"}
+        ActivateElements = {"eft_mp7_stock_a1unfolded"},
+        HasStock = true
     },
     {
         PrintName = "Folded",
@@ -114,7 +115,7 @@ ATT.Description = [[A standard-issue retractable stock for the MP7A2 submachine 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.HasStock = true
+ATT.HasBufferTube = true
 ATT.Category = {"eft_mp7_stock"}
 
 ATT.EFTErgoAdd = 3
@@ -125,7 +126,8 @@ ATT.ToggleStats = {
         PrintName = "Unfolded",
         RecoilMult = 0.83,
         VisualRecoilMult = 0.83,
-        ActivateElements = {"eft_mp7_stock_a2unfolded"}
+        ActivateElements = {"eft_mp7_stock_a2unfolded"},
+        HasStock = true
     },
     {
         PrintName = "Folded",
