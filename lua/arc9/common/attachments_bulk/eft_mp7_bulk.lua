@@ -62,6 +62,7 @@ ATT.MuzzleEffectQCA = 5
 ATT.NoFlash = true
 
 ATT.Category = {"eft_mp7_silen"}
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_mp7_silencer")
 
