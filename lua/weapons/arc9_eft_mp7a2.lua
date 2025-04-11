@@ -14,7 +14,7 @@ SWEP.Description = [[MP7A2 is a further modification of the MP7A1 SMG. The key f
 
 SWEP.DefaultElements = {"eft_mp7_a2"} -- owo
 
-SWEP.Attachments = {_, _, _, _, _, { Installed = "eft_mp7_mag_20" }, { Installed = "eft_mp7_stock_a2" }, _, _, _, _, _, { Category = {"eft_custom_slot", "eft_custom_slot_mp7", "eft_custom_slot_mp7a2",} } } -- hack
+SWEP.Attachments = {  _, _, _, _, _, { Installed = "eft_mp7_mag_20" }, { Installed = "eft_mp7_stock_a2" }, _, _, _, _, { Category = {"eft_custom_slot", "eft_custom_slot_mp7", "eft_custom_slot_mp7a2"} } }
 
 SWEP.AttachmentTableOverrides = { -- what a fucking hell
     ["eft_mp7_stock_a1"] = {
