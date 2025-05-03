@@ -7,10 +7,10 @@ SWEP.Base = "arc9_eft_mp7a1"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.PrintName = "HK MP7A2"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mp7a2")
 SWEP.DefaultBodygroups = "01000000000000"
 
-SWEP.Description = [[MP7A2 is a further modification of the MP7A1 SMG. The key feature of this submachine gun is the replacement of the standard folding foregrip for a Picatinny rail, allowing mounting of various vertical foregrips. Manufactured by Heckler & Koch.]]
+SWEP.Description = "eft_weapon_mp7a2_desc"
 
 SWEP.DefaultElements = {"eft_mp7_a2"} -- owo
 

@@ -5,18 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "HK MP7A1"
-SWEP.Description = [[The HK MP7 submachine gun is extremely compact, lightweight, can be used in very confined spaces, and is practically recoil-free. It can be carried continuously, making it the ideal personal weapon for the soldier of today. Those who carry it will be suitably armed for the broadest range of operations. Manufactured by Heckler & Koch.]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mp7a1")
+SWEP.Description = "eft_weapon_mp7a1_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_smg")
+SWEP.Class = "eft_class_weapon_smg"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_smg")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Heckler & Koch",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "HK 4.6x30mm",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_germ"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2001"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_hk",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_46x30",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_germ",
+    ["eft_trivia_year5"] = "2001"
 }
 
 SWEP.StandardPresets = false 

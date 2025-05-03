@@ -5,18 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "B&T MP9"
-SWEP.Description = [[The Brügger & Thomet MP9 (Maschinenpistole 9mm, German for machine pistol) is a selective-fire 9x19mm Parabellum caliber machine pistol designed and manufactured by Brügger & Thomet of Switzerland. A perfect choice for a Personal Defense Weapon (PDW).]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mp9")
+SWEP.Description = "eft_weapon_mp9_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_smg")
+SWEP.Class = "eft_class_weapon_smg"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_smg")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Brügger & Thomet",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "9x19mm Parabellum",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_recoil"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = "Switzerland",
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2001"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_bt",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_9x19",
+    ["eft_trivia_act3"] = "eft_trivia_act_recoil",
+    ["eft_trivia_country4"] = "eft_trivia_country_switzerland",
+    ["eft_trivia_year5"] = "2001"
 }
 
 SWEP.StandardPresets = false 

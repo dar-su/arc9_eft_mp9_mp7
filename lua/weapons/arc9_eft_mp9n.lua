@@ -7,7 +7,7 @@ SWEP.Base = "arc9_eft_mp9"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.PrintName = "B&T MP9-N"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mp9n")
 SWEP.DefaultBodygroups = "01000000000000"
 
 SWEP.RPM = 1100
@@ -17,7 +17,7 @@ SWEP.Firemodes = {
 }
 
 
-SWEP.Description = [[MP9-N is the further modification of the MP9 submachine gun, which was refined and optimized in cooperation with special units from police and military. MP9-N is currently in service with close protection teams as well as with SWAT teams worldwide. It is also a perfect choice as a Personal Defense Weapon (PDW).]]
+SWEP.Description = "eft_weapon_mp9n_desc"
 
 SWEP.DefaultElements = {"eft_mp9n"} -- owo
 
